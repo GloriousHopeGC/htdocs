@@ -18,7 +18,7 @@ if (isset($_POST['login'])) {
             if ($fetch["user_status"] == 0) {
                 echo "
                     <script>alert('Account is disabled Please Contact The Admin')</script>
-                    <script>window.location = 'index.php'</script>
+                    <script>window.location = '/AGCOWC PROJECTJS/index.php'</script>
                 ";
             } elseif (password_verify($user_pass, $fetch["user_pass"])) {
                 $_SESSION['user'] = $fetch['user_id'];
