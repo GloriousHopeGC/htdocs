@@ -1,0 +1,58 @@
+.home
+{
+    border: 3px solid black;
+    align-items: center;
+    text-align: center;
+    padding: 5px 5px; 
+    border-radius: 20px; 
+    font-size: 14px;
+}
+.home:hover
+{
+    border: 3px solid black;
+    align-items: center;
+    text-align: center;
+    padding: 5px 5px; 
+    border-radius: 20px; 
+    cursor: pointer;
+    background: linear-gradient(to right, #DF2E38, #DDF7E3, #C7E8CA, #5D9C59);
+    border: 3px solid black;
+    transition: 0.7s all ease;
+}
+style 
+{
+    filter: blur(8px);
+}
+.picture
+{
+    padding: 40px 40px;
+    width: 550px;
+}
+.login-form-field
+{
+    outline: none;
+    border: none;
+    height: 30px;
+    text-indent: 10px;
+    width: 300px;
+    display:flex;
+    flex-direction: column;
+}
+.col-7
+{
+    background-color: black;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-bottom: 80px;
+    width: 40%;
+    opacity: 0.5;
+}
+.btn
+{
+    width: 100px; 
+}
+.agcowc-login{
+    position: absolute;
+    right:24%;
+    top: 44%;
+}
