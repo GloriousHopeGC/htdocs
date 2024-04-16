@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"> <!-- Bootstrap Libraries -->
+    <script defer src="assets/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <!-- Sidebar -->
+            <div class="bg-secondary col-auto col-md-4 col-lg-3 min-vh-100 d-flex flex-column justify-content-between">
+                <div class="bg-secondary">
+                    <!-- Sidebar Content -->
+                    <a class="d-flex text-decoration-none mt-1 align-items-center text-white mt-3">
+                        <span class="fs-4 d-none d-sm-inline">
+                            <img src="/assets/images/Embiid.png" class="img- rounded-circle" alt="Menu Icon" width="70px" height="70px" class="me-2">Glorious Hope Cuyos
+                        </span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mt-2">
+                        <!-- Sidebar Menu Items -->
+                        <ul class="nav nav-pills flex-column mt-2">
+                            <li class="nav-item py-2 py-sm-0">
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <i class="fas fa-home"></i><span class="fs-4 ms-3  d-none d-sm-inline">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item py-2 py-sm-0">
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <i class="fa-solid fa-user"></i><span class="fs-4 ms-3  d-none d-sm-inline">Profile</span>
+                                </a>
+                            </li>
+                            <li class="nav-item py-2 py-sm-0">
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <i class="fa-solid fa-comment"></i><span class="fs-4 ms-3 d-none d-sm-inline">Feedback</span>
+                                </a>
+                            </li>
+                            <li class="nav-item py-2 py-sm-0">
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <i class="fa-solid fa-book"></i><span class="fs-4 ms-3  d-none d-sm-inline">Bible</span>
+                                </a>
+                            </li>
+                            <li class="nav-item py-2 py-sm-0">
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <i class="fa-solid fa-door-open"></i><span class="fs-4 ms-3  d-none d-sm-inline">Log-Out</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- More sidebar menu items -->
+                    </ul>
+                </div>
+            </div>
+           
+            <!-- Card Content -->
+            <div class="col">
+                <h2 style="text-align: center">ALMIGHTY GOD CENTER OF WORSHIP CHURCH</h1>
+                <div class="container">
+                    <div class="row justify-content-CENTER">
+                        <div class="col-sm-12 col-md-10 col-lg-8">
+                            <div class="card">
+                                <h5 class="card-header text-white" style="background-color: #016A70;">
+                                    <img src="./pictures/agcow logo.png" class="img1" alt="agcowc">
+                                    <?php echo $postDate; ?>
+                                </h5>
+                                <div class="card-body bg-muted">
+                                    <h5 class="card-title"><?php echo $row['user_title'] ;?></h5>
+                                    <p class="card-text"><?php echo htmlspecialchars($row['user_post']); ?></p>
+                                    <br>
+                                    <p class="card-text">BY: <?php echo $row['admin_fname']." ". $row['admin_lname'];?></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
